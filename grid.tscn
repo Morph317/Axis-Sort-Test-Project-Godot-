@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://m4jxh8kder5i"]
+
+[ext_resource type="PackedScene" uid="uid://cbg1u5x2o2fx1" path="res://basic_block.tscn" id="1_a433f"]
+
+[node name="TileMapLayer" type="Node2D" unique_id=342720469]
+axis_sort_enabled = true
+
+[node name="BasicBlock" parent="." unique_id=1287763741 instance=ExtResource("1_a433f")]
+position = Vector2(96, 96)
+
+[node name="_Node2D_2" parent="." unique_id=360332487 instance=ExtResource("1_a433f")]
+position = Vector2(160, 96)
+
+[node name="_Node2D_3" parent="." unique_id=591463742 instance=ExtResource("1_a433f")]
+position = Vector2(224, 96)
+
+[node name="_Node2D_4" parent="." unique_id=675984588 instance=ExtResource("1_a433f")]
+position = Vector2(288, 96)
+
+[node name="_Node2D_5" parent="." unique_id=334290259 instance=ExtResource("1_a433f")]
+position = Vector2(352, 96)
+
+[node name="_Node2D_6" parent="." unique_id=765759926 instance=ExtResource("1_a433f")]
+position = Vector2(352, 224)
+
+[node name="_Node2D_7" parent="." unique_id=204962095 instance=ExtResource("1_a433f")]
+position = Vector2(288, 224)
+
+[node name="_Node2D_8" parent="." unique_id=1010719877 instance=ExtResource("1_a433f")]
+position = Vector2(224, 224)
+
+[node name="_Node2D_9" parent="." unique_id=175453817 instance=ExtResource("1_a433f")]
+position = Vector2(160, 224)
+
+[node name="_Node2D_10" parent="." unique_id=1622579399 instance=ExtResource("1_a433f")]
+position = Vector2(96, 224)
+
+[node name="_Node2D_11" parent="." unique_id=783190306 instance=ExtResource("1_a433f")]
+position = Vector2(544, 352)
+
+[node name="_Node2D_12" parent="." unique_id=138813989 instance=ExtResource("1_a433f")]
+position = Vector2(544, 288)
+
+[node name="_Node2D_13" parent="." unique_id=1371181888 instance=ExtResource("1_a433f")]
+position = Vector2(544, 224)
+
+[node name="_Node2D_14" parent="." unique_id=1314807892 instance=ExtResource("1_a433f")]
+position = Vector2(544, 160)
+
+[node name="_Node2D_15" parent="." unique_id=207843622 instance=ExtResource("1_a433f")]
+position = Vector2(544, 96)
+
+[node name="_Node2D_16" parent="." unique_id=374461206 instance=ExtResource("1_a433f")]
+position = Vector2(672, 96)
+
+[node name="_Node2D_17" parent="." unique_id=1290240011 instance=ExtResource("1_a433f")]
+position = Vector2(672, 160)
+
+[node name="_Node2D_18" parent="." unique_id=219097120 instance=ExtResource("1_a433f")]
+position = Vector2(672, 224)
+
+[node name="_Node2D_19" parent="." unique_id=2124041423 instance=ExtResource("1_a433f")]
+position = Vector2(672, 288)
+
+[node name="_Node2D_20" parent="." unique_id=1162469341 instance=ExtResource("1_a433f")]
+position = Vector2(672, 352)

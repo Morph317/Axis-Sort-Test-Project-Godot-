@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://kvtbp17krl5d"]
+
+[ext_resource type="Script" uid="uid://c3bpo07xsfyv8" path="res://performance_test.gd" id="1_dooka"]
+
+[node name="PerformanceTest" type="Node2D" unique_id=1168946887]
+script = ExtResource("1_dooka")

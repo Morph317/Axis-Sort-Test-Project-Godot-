@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cbg1u5x2o2fx1"]
+
+[ext_resource type="Texture2D" uid="uid://duvjjhb7fr5s6" path="res://basic_block.png" id="1_mheps"]
+
+[node name="BasicBlock" type="Node2D" unique_id=1287763741]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2074577719]
+position = Vector2(6.115, -6.42)
+scale = Vector2(0.115, 0.115)
+skew = 0.0296706
+texture = ExtResource("1_mheps")
+
+[node name="Label" type="Label" parent="." unique_id=530652380]
+unique_name_in_owner = true
+z_index = 1
+z_as_relative = false
+offset_left = -24.0
+offset_top = -11.0
+offset_right = 20.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Index"
+horizontal_alignment = 1

@@ -1,0 +1,28 @@
+[gd_scene format=4 uid="uid://cyl7u64jra6q1"]
+
+[ext_resource type="PackedScene" uid="uid://cbg1u5x2o2fx1" path="res://basic_block.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://m4jxh8kder5i" path="res://grid.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://cal8yfxqon6sg" path="res://show_child_index.gd" id="2_h2yge"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0xm2m"]
+scenes/1/scene = ExtResource("1_ig7tw")
+
+[sub_resource type="TileSet" id="TileSet_h2yge"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetScenesCollectionSource_0xm2m")
+
+[node name="Node2D" type="Node2D" unique_id=494592890]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=729757504]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAABAAEAAAAAAAAAAQACAAEAAAAAAAAAAQADAAEAAAAAAAAAAQAEAAEAAAAAAAAAAQAFAAEAAAAAAAAAAQAFAAMAAAAAAAAAAQAEAAMAAAAAAAAAAQADAAMAAAAAAAAAAQACAAMAAAAAAAAAAQABAAMAAAAAAAAAAQAIAAUAAAAAAAAAAQAIAAQAAAAAAAAAAQAIAAMAAAAAAAAAAQAIAAIAAAAAAAAAAQAIAAEAAAAAAAAAAQAKAAEAAAAAAAAAAQAKAAIAAAAAAAAAAQAKAAMAAAAAAAAAAQAKAAQAAAAAAAAAAQAKAAUAAAAAAAAAAQABAAYAAAAAAAAAAQACAAYAAAAAAAAAAQACAAUAAAAAAAAAAQAEAAUAAAAAAAAAAQAEAAYAAAAAAAAAAQAFAAYAAAAAAAAAAQACAAkAAAAAAAAAAQACAAgAAAAAAAAAAQABAAgAAAAAAAAAAQAEAAkAAAAAAAAAAQAEAAgAAAAAAAAAAQAFAAgAAAAAAAAAAQA=")
+tile_set = SubResource("TileSet_h2yge")
+x_draw_order_reversed = true
+rendering_quadrant_size = 2
+script = ExtResource("2_h2yge")
+
+[node name="Grid" parent="." unique_id=490303327 instance=ExtResource("2_0xm2m")]
+visible = false
+position = Vector2(100, 234.849)
+
+[connection signal="child_order_changed" from="TileMapLayer" to="TileMapLayer" method="_on_child_order_changed"]
